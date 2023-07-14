@@ -10,6 +10,11 @@
 <a href="#project"><h3>Project</h3></a>
 <a href=""><h3>Assignments</h3></a>
 <a href=""><h3>Contact</h3></a>
+<style>
+    *{
+        scroll-behavior: smooth;
+    }
+</style>
 
 <h1 id="home">Hey,I’m Lahiru Indusara </h1>
 
@@ -21,9 +26,55 @@
 
 <img src="assert/i%20am.png"><br><br><br><br>
 
-<input type="text"><button>Subscribe</button>
+<div class="input-group">
+    <input type="email" class="input" id="Email" name="Email" placeholder="uiverse@verse.io" autocomplete="off">
+    <input class="button--submit" value="Subscribe" type="submit">
+</div>
+<style>
+    *{
+        scroll-behavior: smooth;
+    }
+    .input-group {
+        display: flex;
+        align-items: center;
+    }
 
-<h3>Join my newsletter and get free strategies</h3>
+    .input {
+        min-height: 50px;
+        max-width: 150px;
+        padding: 0 1rem;
+        color: #000000;
+        font-size: 15px;
+        border: 1px solid #5e4dcd;
+        border-radius: 6px 0 0 6px;
+        background-color: transparent;
+    }
+
+    .button--submit {
+        min-height: 50px;
+        padding: .5em 1em;
+        border: none;
+        border-radius: 0 6px 6px 0;
+        background-color: #5e4dcd;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .button--submit:hover {
+        background-color: #5e5dcd;
+    }
+
+    .input:focus, .input:focus-visible {
+        border-color: #3898EC;
+        outline: none;
+    }
+
+</style>
+<!--<input type="text"><button>Subscribe</button>
+
+<h3>Join my newsletter and get free strategies</h3>-->
 
 
 <h1 id="about">ABOUT ME</h1><br>
