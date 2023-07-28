@@ -1,114 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Name</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<svg width="512" height="512hut" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg_refl">
-  <use href="#everything">
-  </use>
-  <defs>
-    <g id="everything">
-      <use href="#wave" x="256" y="196"/>
-      <use href="#morph1" x="256" y="196"/>
-      <use href="#morph2" x="256" y="196"/>
-      <use href="#morph3" x="256" y="196"/>
-      <animateTransform attributeName="transform" attributeType="XML" type="translate"
-                        dur="4s" repeatCount="indefinite" calcMode="spline"
-                        keyTimes="0;0.5;1"
-                        keySplines="0.7 0 0.3 1; 0.7 0 0.3 1"
-                        values="0 -16; 0 16; 0 -16"/>
-    </g>
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Your Website</h1>
+      <p>Your website tagline goes here.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
 
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur eget nisl sit amet ultricies.</p>
+    </div>
+  </section>
 
-    <ellipse id="wave" stroke-width="12" stroke="#c3abd1">
-      <animate attributeName="rx" dur="2s" repeatCount="indefinite" calcMode="spline" begin="100ms"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="96;48;132;182;182"/>
-      <animate attributeName="ry" dur="2s" repeatCount="indefinite" calcMode="spline" begin="100ms"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="96;64;92;182;182"/>
-      <animate attributeName="opacity" dur="2s" repeatCount="indefinite" calcMode="linear" begin="100ms"
-               keyTimes="0;0.74;0.75;0.9;1"
-               values="0;0;1;0;0"/>
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
+  <!-- More sections (e.g., Services, Contact, etc.) can be added here -->
+</main>
 
-    </ellipse>
-    <ellipse id="morph1" rx="96" ry="96" stroke-width="12" stroke="#c3abd1">
-      <animate attributeName="rx" dur="2s" repeatCount="indefinite" calcMode="spline" begin="100ms"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="96;48;132;90;96"/>
-      <animate attributeName="ry" dur="2s" repeatCount="indefinite" calcMode="spline" begin="100ms"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="96;64;92;90;96"/>
-      <animate attributeName="stroke" dur="2s" repeatCount="indefinite" begin="100ms"
-               keyTimes="0;0.65;0.75;1"
-               values="#c3abd1;#c3abd1;#908bbf;#c3abd1"/>
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
-    </ellipse>
-    <ellipse id="morph2" rx="76" ry="76" stroke-width="12" stroke="#908bbf">
-      <animate attributeName="rx" dur="2s" repeatCount="indefinite" calcMode="spline" begin="50ms"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="76;32;102;70;76"/>
-      <animate attributeName="ry" dur="2s" repeatCount="indefinite" calcMode="spline" begin="50ms"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="76;44;72;70;76"/>
-      <animate attributeName="stroke" dur="2s" repeatCount="indefinite" begin="100ms"
-               keyTimes="0;0.65;0.75;1"
-               values="#908bbf;#908bbf;#332765;#908bbf"/>
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
-    </ellipse>
-    <ellipse id="morph3" rx="56" ry="56" stroke-width="12" stroke="#332765" fill="#332765">
-      <animate attributeName="rx" dur="2s" repeatCount="indefinite" calcMode="spline"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="56;20;72;50;56"/>
-      <animate attributeName="ry" dur="2s" repeatCount="indefinite" calcMode="spline"
-               keyTimes="0;0.65;0.75;0.9;1"
-               keySplines="1 0 0.4 0.8; 0 0.7 1 1; 1 1 1 1; 1 1 1 1"
-               values="56;20;42;50;56"/>
-      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
-    </ellipse>
+<footer>
+  <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+</footer>
+<style>/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
 
-    <filter id="reflection">
-      <feTurbulence id="refl_turb" type="turbulence" numOctaves="2" result="turbulence"/>
-      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="32" xChannelSelector="G" yChannelSelector="R"/>
-      <animate id="anim_turb" dur="100s" href="#refl_turb" attributeName="baseFrequency" repeatCount="indefinite"
-               values="0.005 0.05; 0.003 0.005; 0.005 0.05"/>
-    </filter>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
 
-    <linearGradient id="fresnel" gradientTransform="rotate(90)">
-      <stop offset="0" stop-color="#c3abd100"/>
-      <stop offset="1" stop-color="#c3abd1a0"/>
-    </linearGradient>
-  </defs>
-</svg>
-<style>
-  body,html{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  body{
-    background-color: #c6c8de;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(0deg, #c3abd1 0%, #c6c8de 33%);
-  }
-  #svg_refl{
-    height: 100%;
-  }
+/* Navbar styles */
+header {
+  background-color: #333;
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('assert/i am.png');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #FF5722;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #FF7043;
+}
+
+/* General section styles */
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
 </style>
 </body>
 </html>
